@@ -1,0 +1,755 @@
+*
+    box-sizing: border-box
+
+$color-blue: #5290Ea
+$color-orange: #F28B64
+$color-grey: #E2E2E2
+$color-backgrount-first: #F0F0F0
+
+html
+    font-family: Montserrat
+    font-weight: 400
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+.main-section
+    position: relative
+    overflow: hidden
+    min-height: 775px
+    background: $color-backgrount-first
+    padding-top: 25px
+    margin-bottom: 39px
+    &__nav-cont
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        height: 114px
+        align-items: center
+    &__logo
+        width: 216px
+    &__content-cont
+        position: relative
+        display: flex
+        flex-direction: row
+    &__first-elipse
+        position: absolute
+        top: 100px
+        right: 150px
+        z-index: 1
+    &__second-elipse
+        position: absolute
+        right: -120px
+        top: 600px
+  
+.nav-menu
+    &__list
+        display: flex
+        flex-direction: row
+    &__list-item
+        margin-right: 64px
+        font-size: 18px
+        font-weight: 600
+        &:last-child
+            margin-right: 0
+        a
+            text-decoration: none
+            color: black
+ 
+.left-wrapper
+    position: relative
+    img 
+        position: relative
+        z-index: 4
+        pointer-events: none
+    &__rectangle-blue
+        position: absolute
+        top: 120px
+        left: -5px
+        z-index: 2
+        transform: rotate(-63deg)
+        width: 565px
+        height: 180px
+        background: $color-blue
+        border-radius: 100px
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25)
+    &__rectangle-orange
+        position: absolute
+        top: 130px
+        left: 5px
+        z-index: 3
+        transform: rotate(-53deg)
+        width: 618px
+        height: 180px
+        background: $color-orange
+        border-radius: 100px
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25)
+    &__rectangle-grey
+        position: absolute
+        top: 154px
+        left: 35px
+        z-index: 1
+        transform: rotate(-42deg)
+        width: 600px
+        height: 180px
+        background: $color-grey
+        border-radius: 100px
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25)
+
+
+.right-wrapper
+    width: 357px
+    height: 235px
+    position: absolute
+    top: 100px
+    right: 100px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &__text
+        font-size: 16px
+        margin-bottom: 5px
+    z-index: 5
+
+
+.icons
+    display: flex
+    flex-direction: row
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border: 1px solid $color-blue
+        border-radius: 100px
+        margin-right: 6px
+        z-index: 5
+        a
+            text-decoration: none
+            color: black
+        &:last-child
+            margin-right: 0px
+        i
+            font-size: 21px
+
+.title
+    font-size: 64px
+    position: relative
+    font-weight: 600
+    &__hr
+        width: 65px
+        position: absolute
+        margin: 0
+        bottom: 0
+        border: none
+        border-top: 1px solid black
+.hr-new
+    top: 70px
+
+.buttons
+    display: flex
+    flex-direction: row
+    &__main-btn
+        margin-right: 20px
+        width: 210px
+        height: 40px
+        background: $color-orange
+        border-radius: 100px
+        border: none
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        font-size: 18px
+        color: white
+    &__icon-btn
+        display: flex
+        flex-direction: row
+        align-items: center
+        img
+            margin-right: 9px
+    &__text
+        font-size: 14px
+
+.elipse
+    width: 156px
+    height: 156px
+    background: linear-gradient(147.71deg, rgba(237, 123, 80, 0.5) 14.08%, rgba(72, 138, 234, 0.5) 51.11%, rgba(44, 44, 44, 0.5) 85.38%)
+    border-radius: 100px
+    justify-content: center
+    align-items: center
+    display: flex
+    &_big
+        width: 282px
+        height: 282px
+        border-radius: 200px
+    &__subtract
+        width: 111.43px
+        height: 111.43px
+        background: $color-backgrount-first
+        border-radius: 100px
+        &_big
+            width: 188px
+            height: 188px   
+    
+.second-section
+    position: relative
+    overflow: hidden
+    min-height: 675px
+    background: #FFFFFF
+    margin-bottom: 25px
+    &__title
+        margin-bottom: 25px
+    &__guitar-block
+        position: relative
+        width: 1140px
+        height: 360px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        margin-bottom: 53px
+        &_first-elipse
+            position: absolute
+            top: -34px
+            right: -81px
+            z-index: 1
+        &_second-elipse
+            position: absolute
+            top: 266px
+            left: -63px
+    &__boxes
+        position: relative
+        z-index: 2
+        overflow: hidden
+        height: 360px
+        width: 360px
+        border-radius: 10px
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25)
+        &_left
+            background: $color-grey
+        &_middle
+            background: $color-orange
+        &_right
+            background: $color-blue
+    &__achivments
+        width: 1140px
+        height: 100px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+.box
+    &__content
+        position: relative
+        img
+            position: absolute
+            top: 25px
+            left: 13px
+            margin: 0 0 0 0
+        &_text
+            position: absolute   
+            top: 135px
+            right: 20px
+            font-size: 40px
+            font-weight: 600
+            text-align: center
+            transform: rotate(90deg)
+
+.textmid
+    right: -30px
+
+.achiv
+    width: 1140px
+    position: relative
+    h1
+        position: absolute
+        font-weight: 600
+        font-size: 40px
+        top: 2px
+        left: 117px
+    p
+        position: absolute
+        font-size: 20px
+        top: 41px
+        left: 112px
+    img
+        position: absolute
+
+.third-section
+    position: relative
+    overflow: hidden
+    min-height: 675px
+    background: $color-backgrount-first
+    &__content-cont
+        display: flex
+        flex-direction: row
+    &__left-wrapper
+        position: relative
+        width: 478px
+        height: 314px
+        padding-top: 195px
+        padding-left: 117px
+        margin-right: 238px
+        img
+            position: absolute
+            top: 200px
+            left: 55px
+        &_elipse
+            position: absolute
+            top: 160px
+            left: 165px 
+        &_title
+            position: absolute
+            z-index: 1
+            top: 263px
+            left: 200px 
+    &__right-wrapper
+        width: 457px
+        height: 557px
+        padding-top: 97px
+    &__title-right
+        margin-bottom: 32px
+    &__text
+        font-size: 20px
+        margin-bottom: 50px
+    &__second-elipse
+        position: absolute
+        top: -84px
+        right: -103px 
+
+.footer
+    position: relative
+    &__img
+        position: absolute
+        left: 00px
+        bottom: -20px
+    &__container
+        padding-top: 100px
+        min-height: 355px
+        display: flex
+        align-content: center
+        justify-content: flex-end
+    &__title
+        margin-bottom: 20px
+        
+    
+@media (max-width: 1199px) // 992 - 1199
+    .container
+        width: 960px
+    .main-section
+        min-height: 700px
+        margin-bottom: 15px
+        &__second-elipse
+            top: 534px
+    .left-wrapper
+        position: relative
+        img 
+            width: 680px
+        &__rectangle-blue
+            width: 530px
+            height: 180px
+            top: 120px
+            left: -5px
+        &__rectangle-orange
+            width: 565px
+            height: 180px
+        &__rectangle-grey
+            width: 540px
+            height: 180px
+    .second-section__boxes
+        height: 300px
+        width: 300px
+    .box__content_text
+        top: 110px
+        right: 0px
+    .textmid
+        right: -70px
+    .second-section__guitar-block
+        margin-bottom: -11px
+    .second-section__guitar-block_second-elipse
+        top: 190px
+    .achiv p
+        font-size: 16px
+    .achiv h1
+        font-size: 36px
+    .second-section
+        min-height: 560px
+    .third-section__left-wrapper_title
+        left: 150px
+    .third-section__left-wrapper
+        margin-right: 50px
+    .third-section__right-wrapper
+        padding-top: 50px
+    .third-section
+        min-height: 610px
+    .footer__img
+        width: 450px
+        padding-top: 
+    .footer__container
+        padding-top: 32px
+        min-height: 286px
+
+    
+
+@media (max-width: 991px) // 768 - 991
+    .container
+        width: 720px
+    .title
+        font-size: 54px
+    .nav-menu__list-item
+        margin-right: 22px
+    .main-section
+        min-height: 576px
+        margin-bottom: 15px
+        &__first-elipse
+            right: 0px
+        &__second-elipse
+            top: 436px
+        &__logo
+            width: 157px
+    .left-wrapper
+        position: relative
+        img 
+            width: 530px
+        &__rectangle-blue
+            width: 420px
+            height: 130px
+            top: 120px
+            left: -15px
+        &__rectangle-orange
+            width: 450px
+            height: 130px
+            top: 130px
+            left: -5px
+        &__rectangle-grey
+            width: 413px
+            height: 130px
+            top: 155px
+            left: 25px
+        
+    .right-wrapper
+        height: 280px
+        right: -30px
+    .buttons 
+        flex-direction: column
+        align-items: end
+        &__icon-btn
+            margin-right: 50px
+        &__main-btn
+            margin-bottom: 15px
+    .second-section__boxes
+        height: 220px
+        width: 220px
+    .box__content_text
+        font-size: 25px
+        top: 85px
+        right: 0px
+    .box__content img
+        width: 100px
+    .textmid
+        right: -40px
+    .second-section__guitar-block
+        margin-bottom: -100px
+    .second-section__guitar-block_second-elipse
+        top: 115px
+    .achiv img
+        width: 70px
+    .achiv p
+        font-size: 12px
+        left: 73px
+        top: 30px
+    .achiv h1
+        font-size: 30px
+        left: 78px
+    .second-section
+        min-height: 300px
+    .third-section__left-wrapper_title
+        left: 40px
+        top: 177px
+    .third-section__left-wrapper img
+        top: 150px
+    .third-section__left-wrapper_elipse
+        top: 90px
+        left: 190px
+    .third-section__left-wrapper
+        margin-right: 0px
+    .third-section__right-wrapper
+        padding-top: 50px
+    .third-section__title-right
+        z-index: 3
+        font-size: 45px
+        margin-bottom: 20px
+    .third-section__text
+        font-size: 15px
+        margin-bottom: 15px
+    .hr-new
+        top: 45px
+    .third-section
+        min-height: 530px
+    .footer__img
+        width: 390px
+    .footer__container
+        padding-top: 32px
+        min-height: 250px
+    .footer__title
+        font-size: 45px
+    .footer__icons-box
+        justify-content: center
+
+@media (max-width: 767px) // 576 - 767
+    .container
+        width: 540px
+    .nav-menu
+        display: none
+        position: fixed
+        top: 0px
+        right: -100%
+        height: 100vh
+        width: 40%
+        background: rgba(72, 138, 234, 0.7)
+        z-index: 9
+        transition: 1s all
+        &__list
+            flex-direction: column
+            justify-content: space-evenly
+            align-items: center
+            height: 100%
+        &__list-item
+            margin-right: 0
+            font-size: 22px
+    .nav-menu_active
+        display: block
+        right: 0px
+    .hamburger
+        width: 30px
+        height: 14px
+        position: fixed
+        top: 40px
+        right: 30px
+        z-index: 10
+        span
+            height: 2px
+            width: 100%
+            display: block
+            background: black
+            margin-bottom: 4px
+            transition: 1s all
+            &:last-child
+                margin-bottom: 0px
+    .hamburger_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg) 
+    .left-wrapper img
+        width: 410px
+        padding-top: 100px
+    .left-wrapper
+        &__rectangle-blue
+            width: 274px
+            height: 86px
+            top: 167px
+            left: -6px
+        &__rectangle-orange
+            width: 308px
+            height: 86px
+            top: 177px
+            left: -5px
+        &__rectangle-grey
+            width: 282px
+            height: 86px
+            top: 177px
+            left: 25px
+    .right-wrapper
+        top: 0
+    .main-section__first-elipse
+        top: 5px
+    .buttons__main-btn
+        width: 180px
+        height: 50px
+        margin-bottom: 10px
+    .second-section__guitar-block
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 25px
+        height: 600px
+    .box__content_text
+        transform: none
+        top: 70px
+        right: 45px
+    .second-section__boxes
+        height: 188px
+        width: 300px
+    .textmid
+        right: 5px
+    .second-section__achivments
+        height: 200px
+        flex-wrap: wrap
+        width: 380px
+        align-content: stretch
+    .achiv
+        display: inline
+        width: 100px
+        margin-right: 70px
+    .second-section
+        margin-bottom: 0px
+    .second-section__guitar-block_first-elipse
+        right: 30px
+    .second-section__guitar-block_second-elipse
+        left: 40px
+        top: 546px
+    .third-section__left-wrapper_title
+        left: -20px
+        top: 145px
+    .third-section__left-wrapper img
+        left: -60px
+        top: 60px
+    .third-section__left-wrapper_elipse
+        left: 122px
+        top: 75px
+    .third-section__right-wrapper
+        padding-top: 30px
+        height: 570px
+    .footer__img
+        width: 250px
+        left: -15vh
+    .footer__container
+        min-height: 150px
+        padding-top: 5px
+        position: relative
+    .footer__wrapper
+        h1
+            text-align: right
+        hr
+            left: 30px
+        position: absolute
+        top: 75px
+        right: 10px
+    .footer__icons-box
+        margin-bottom: 15px
+    
+
+@media (max-width: 575px) // 320 - 575
+    .container
+        width: 100%
+    .main-section
+        padding-top: 5px
+        min-height: 540px
+    .main-section__logo
+        width: 120px
+    .right-wrapper
+        width: 300px
+        right: 0px
+        height: 260px
+    .left-wrapper img
+        width: 300px
+        padding-top: 200px
+    .main-section__first-elipse
+        top: 0px
+    .main-section__second-elipse
+        right: -160px
+        top: 400px
+    .main-section__nav-cont
+        height: 90px
+        
+    .buttons__main-btn
+        font-size: 14px
+        width: 140px
+        height: 40px
+    .buttons__icon-btn
+        justify-content: flex-end
+        width: 165px
+        margin: 0 20px 0 0
+    .left-wrapper
+        &__rectangle-blue
+            width: 191px
+            height: 69px
+            top: 294px
+            left: 5px
+        &__rectangle-orange
+            width: 203px
+            height: 69px
+            top: 296px
+            left: 10px
+        &__rectangle-grey
+            width: 185px
+            height: 69px
+            top: 296px
+            left: 25px
+    .second-section__boxes
+        height: 150px
+        width: 260px
+    .second-section__guitar-block
+        height: 470px
+    .box__content_text
+        top: 50px
+        font-size: 18px
+    .textmid
+        right: 13px
+    .second-section__title
+        text-align: center
+    .hr_second
+        display: none
+    .second-section__guitar-block
+        max-width: 320px 
+    .second-section__guitar-block_first-elipse
+        right: -37px
+    .second-section__guitar-block_second-elipse
+        left: -30px
+        top: 340px
+    .second-section__achivments
+        height: 320px
+        justify-content: center
+    .third-section__left-wrapper
+        width: 0px
+        padding-left: 0
+        margin-right: 15px
+    .third-section__left-wrapper_title
+        display: none
+    .third-section__title-right
+        font-size: 36px
+    .third-section__text
+        font-size: 12px
+    .third-section__left-wrapper_elipse
+        display: none
+    .third-section__right-wrapper
+        right: 250px
+        width: 80vh
+        height: 450px
+    .third-section__second-elipse
+        top: -137px
+        right: -144px
+    .third-section__left-wrapper img
+        left: -125px
+        top: 125px
+    .hr-new
+        top: 35px
+        left: 3px
+        width: 35px
+    .third-section
+        min-height: 450px
+    
+    .footer__title
+        font-size: 28px
+        margin-bottom: 10px
+    .footer__container
+        flex-direction: column
+        position: relative
+    .footer__img
+        width: 260px
+        left: -5vh
+    .footer__wrapper
+        position: absolute
+        top: 125px
+        right: 10px
+    .hr-right
+        top: 27px
+        left: 10px
+    .footer__wrapper hr
+        left: 20px
+    .footer__icons-box
+        margin-bottom: 15px
